@@ -18,11 +18,10 @@ var heightChecker = function(heights) {
   for (let index = 0; index < heights.length; index++) {
     //compare heights iteration value to that of sorted newHeights and
     //pre-increase wrongstanding . Why ?
-    newHeight[index] !== heights[index] && ++wrongStanding;
-    /*if (newHeight[index] !== heights[index]) {
-              ++wrongStanding;
-            }
-            */
+    //newHeight[index] !== heights[index] && ++wrongStanding;
+    if (newHeight[index] !== heights[index]) {
+      ++wrongStanding;
+    }
   }
 
   console.log(newHeight);
