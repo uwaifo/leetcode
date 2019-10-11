@@ -44,6 +44,7 @@ var fruits = ['Banana', 'Apple', 'Mango'];
 console.log(flipAndInvertImage(arrInput));
 
 /*
+https://medium.com/@josephcardillo/how-to-reverse-arrays-in-javascript-without-using-reverse-ae995904efbe
 
 Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.
 

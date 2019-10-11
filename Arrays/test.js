@@ -1,31 +1,15 @@
-function tester(arg) {
-  let sum = arg.reduce((accu, next) => accu + next);
-  return sum;
-}
+function isPalindrome(word) {
+  let strLen = Math.floor(word.length / 2);
+  word = word.toLocaleLowerCase();
 
-let smallTest = [1, 1, 4, 2, 1, 3];
-let bigTest = [
-  10,
-  6,
-  6,
-  10,
-  10,
-  9,
-  8,
-  8,
-  3,
-  3,
-  8,
-  2,
-  1,
-  5,
-  1,
-  9,
-  5,
-  2,
-  7,
-  4,
-  7,
-  7
-];
-console.log(tester(smallTest));
+  for (let i = 0; i < strLen; i++) {
+    if (word[i] !== word[strLen - i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+var word = 'Deleveled';
+var word2 = 'adam';
+console.log(isPalindrome(word));
+console.log(isPalindrome(word2));
